@@ -10,10 +10,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    let items = [
+        Item(name: "Item 1", description: "Description 1", imageName: "image1"),
+        Item(name: "Item 2", description: "Description 2", imageName: "image2"),
+        Item(name: "Item 3", description: "Description 3", imageName: "image3"),
+    ]
+    
     var body: some View {
         
-        VStack {
-           
+        NavigationView {
+            List(items) { item in
+                NavigationLink(destination: DetailView(item: item)) {
+                    ItemRow(item: item)
+                }
+            }
+            .navigationTitle("Items")
         }
     }
 }
