@@ -1,9 +1,11 @@
+//  /*
 //
-//  ItemModel.swift
-//  ItemList
+//  Project: ItemList
+//  File: ItemModel.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 30.11.2023
 //
-//  Created by Elaidzha Shchukin on 30.11.2023.
-//
+//  */
 
 import Foundation
 

@@ -1,9 +1,11 @@
+//  /*
 //
-//  DetailView.swift
-//  ItemList
+//  Project: ItemList
+//  File: DetailView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 30.11.2023
 //
-//  Created by Elaidzha Shchukin on 30.11.2023.
-//
+//  */
 
 import SwiftUI
 
@@ -16,15 +18,18 @@ struct DetailView: View {
             Text(item.name)
                 .font(.system(size: 22, weight: .bold, design: .rounded))
                 .padding()
+            
             Image(item.imageName)
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(15)
                 .padding()
+            
             Text(item.description)
                 .font(.system(size: 15, weight: .bold, design: .rounded))
                 .foregroundColor(.secondary)
                 .padding()
+            
             Spacer()
         }
     }

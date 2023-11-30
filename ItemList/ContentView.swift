@@ -20,8 +20,9 @@ struct ContentView: View {
                 }
                 .listStyle(.insetGrouped)
             }
-            .navigationTitle("Items")
+            .navigationTitle("Automobiles")
         }
+        .accentColor(.black)
     }
 }
 
