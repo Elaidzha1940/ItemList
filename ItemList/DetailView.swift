@@ -16,13 +16,14 @@ struct DetailView: View {
             Image(systemName: item.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 100)
+                //.frame(height: 100)
                 .padding()
             Text(item.name)
-                .font(.title)
+                .font(.system(size: 22, weight: .bold, design: .rounded))
                 .padding()
             Text(item.description)
-                .font(.body)
+                .font(.system(size: 28, weight: .bold, design: .rounded))
+                .foregroundColor(.secondary)
                 .padding()
             Spacer()
         }
@@ -32,6 +33,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(item: Item(name: "Item 1", description: "Description 1", imageName: "image1"))
+        DetailView(item: Item(name: "", description: "", imageName: ""))
     }
 }

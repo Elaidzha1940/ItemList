@@ -11,9 +11,10 @@ import SwiftUI
 
 struct ContentView: View {
     let items = [
-        Item(name: "Item 1", description: "Description 1", imageName: "image1"),
-        Item(name: "Item 2", description: "Description 2", imageName: "image2"),
-        Item(name: "Item 3", description: "Description 3", imageName: "image3"),
+        Item(name: "Aston Martin", description: "Description 1", imageName: "aston"),
+        Item(name: "Jaguar F-Type", description: "Description 2", imageName: "jaguar"),
+        Item(name: "BMW 8 series", description: "Description 3", imageName: "8s"),
+        Item(name: "Mercedes Benz S63", description: "Description 3", imageName: "s63"),
     ]
     
     var body: some View {
@@ -23,6 +24,7 @@ struct ContentView: View {
                 NavigationLink(destination: DetailView(item: item)) {
                     ItemRow(item: item)
                 }
+                .listStyle(.grouped)
             }
             .navigationTitle("Items")
         }
